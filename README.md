@@ -1,81 +1,75 @@
 # 🌌 NEBULA: LAST STAND
 
 <p align="center">
-  <img src="screenshots/app-logo.png" alt="NEBULA: LAST STAND app logo" width="280"/>
+  <img src="screenshots/app-logo.jpg" alt="NEBULA: LAST STAND app logo" width="220"/>
 </p>
 
 <h2 align="center">🚀 One Spaceship. Endless Enemies. One Last Stand.</h2>
-<p align="center">A 2D space shooter built with HTML, CSS, JavaScript and Android Studio.</p>
+<p align="center">A 2D space-shooter game built with HTML, CSS, JavaScript and Android Studio.</p>
 
 ---
 
-## 🎮 About
+## 🎮 About the Project
 
-**NEBULA: LAST STAND** is a 2D space shooter arcade game. Control a spaceship, destroy incoming enemies, fight powerful bosses, collect power-ups and survive increasingly challenging waves.
+**NEBULA: LAST STAND** is a 2D space-shooter arcade game where players pilot a spaceship, destroy incoming enemies, fight boss battles, collect power-ups and survive increasingly challenging waves.
 
-The project started as a browser game and was later packaged as an Android application using Android Studio, Kotlin and WebView.
+The project began as a browser game and was also packaged as an Android application using **Kotlin and Android WebView**. The Android APK has been installed and tested on a real Android phone.
 
 ## 📸 Screenshots
 
 ### Main gameplay
+
 <p align="center">
-  <img src="screenshots/gameplay-main.png" alt="NEBULA: LAST STAND main gameplay" width="100%"/>
+  <img src="screenshots/gameplay-main.jpg" alt="NEBULA: LAST STAND gameplay showing the HUD, spaceship and joystick controls" width="100%"/>
 </p>
 
-*Game HUD showing score, health, level, lives, best score, pause and joystick/button control modes.*
+*The game HUD displays score, health, level, lives, best score and pause controls, with joystick and button control modes.*
 
 ### App icon
+
 <p align="center">
-  <img src="screenshots/app-logo.png" alt="NEBULA: LAST STAND custom app icon" width="240"/>
+  <img src="screenshots/app-logo.jpg" alt="NEBULA: LAST STAND custom app icon" width="220"/>
 </p>
+
+---
 
 ## ✨ Features
 
 - 🚀 Spaceship movement and shooting
 - 👾 Enemy waves and enemy projectiles
-- 👑 Boss battles with health system
-- ❤️ Health and three lives
-- ⚡ Health, shield, triple-shot and speed power-ups
-- 💥 Particle effects and starfield
-- ⭐ Score, level and best-score tracking
+- 👑 Boss battles and bonus rewards
+- ❤️ Health system and three lives
+- ⚡ Power-ups: health, shield, triple shot and speed boost
+- ⭐ Score, levels and best-score tracking
 - ⏸️ Pause and resume
-- 📱 Mobile touch controls with virtual joystick and FIRE button
-- 🔊 Web Audio API sound effects
+- 💥 Particle effects and star-field visuals
+- 🔊 Sound effects using the Web Audio API
+- 📱 Mobile-friendly touch controls with virtual joystick and FIRE button
 - 💾 Best score saved with local storage
-- 🌐 Browser version hosted with GitHub Pages
-- 📦 Android APK built and tested on a real device
+- 🌐 Playable in a web browser
+- 📦 Android APK tested on a real device
 
-## 🛠️ Technologies
+## 🎯 Controls
+
+| Action | Desktop | Mobile |
+|---|---|---|
+| Move | WASD / Arrow keys | Virtual joystick or on-screen buttons |
+| Shoot | Space | FIRE button |
+| Pause | In-game pause control | In-game pause control |
+
+## 🛠️ Built With
 
 | Technology | Use |
 |---|---|
 | HTML5 | Game structure |
-| CSS3 | Styling and interface |
-| JavaScript | Game logic |
+| CSS3 | Interface and styling |
+| JavaScript | Game mechanics |
 | HTML5 Canvas | Rendering |
 | Web Audio API | Sound effects |
 | Local Storage | Best-score persistence |
 | Kotlin | Android activity |
 | Android Studio | Android build |
-| Android WebView | Loading local game assets |
-
-## 🎯 Controls
-
-**Desktop**
-
-| Key | Action |
-|---|---|
-| W / ↑ | Move up |
-| S / ↓ | Move down |
-| A / ← | Move left |
-| D / → | Move right |
-| Space | Shoot |
-
-**Mobile**
-
-- Use the virtual joystick to move.
-- Tap **FIRE** to shoot.
-- Switch between joystick and button control modes where available.
+| Android WebView | Runs local game assets inside Android |
 
 ## 🌐 Play Online
 
@@ -83,25 +77,21 @@ The project started as a browser game and was later packaged as an Android appli
   <a href="https://tejameragala-ops.github.io/NEBULA-LAST-STAND/"><strong>🚀 PLAY NEBULA: LAST STAND</strong></a>
 </p>
 
-## 📱 Android App
+## 📲 Run the Browser Version Locally
 
-The Android version uses a Kotlin Activity and WebView to load the game's local assets:
+1. Clone this repository:
 
-- JavaScript enabled
-- DOM storage enabled
-- Local HTML, CSS and JavaScript assets
+   ```bash
+   git clone https://github.com/tejameragala-ops/NEBULA-LAST-STAND.git
+   ```
 
-The debug APK has been installed and tested on a physical Android phone. A Google Play release is a future goal.
+2. Open the project folder.
+3. Open `index.html` in a modern browser.
+4. Start playing!
 
-## 💻 Run Locally
+No additional dependencies are required for the basic browser version.
 
-```bash
-git clone https://github.com/tejameragala-ops/NEBULA-LAST-STAND.git
-```
-
-Open the project folder and launch `index.html` in a modern browser.
-
-## 📂 Project Structure
+## 📁 Repository Structure
 
 ```text
 NEBULA-LAST-STAND/
@@ -110,28 +100,38 @@ NEBULA-LAST-STAND/
 ├── game.js
 ├── README.md
 └── screenshots/
-    ├── app-logo.png
-    └── gameplay-main.png
+    ├── app-logo.jpg
+    └── gameplay-main.jpg
 ```
 
-## 🚀 Future Improvements
+## 📱 Android Version
 
-- Google Play Store release
-- More enemy types, bosses and levels
-- New spaceships and weapons
-- Additional environments, effects and soundtracks
+The Android app loads the game files bundled locally in the app's assets directory using a Kotlin-based Android Activity and WebView. JavaScript and DOM storage are enabled so the game can run with its browser features.
+
+The debug APK has been built, installed and tested on a physical Android phone. Google Play Store release preparation is a future step.
+
+## 🔭 Future Improvements
+
+- Prepare a signed release build and Google Play Store submission
+- Add more enemy types, spaceships and weapons
+- Introduce additional levels and environments
+- Expand visual and audio effects
 
 ## 👨‍💻 Developer
 
 **Meragala Teja**  
 B.Tech – Computer Science and Engineering (AI)
 
-- GitHub: [@tejameragala-ops](https://github.com/tejameragala-ops)
-- LinkedIn: [Meragala Teja](https://www.linkedin.com/in/meragala-teja-7a5820328/)
+- **GitHub:** [tejameragala-ops](https://github.com/tejameragala-ops)
+- **LinkedIn:** [Meragala Teja](https://www.linkedin.com/in/meragala-teja-7a5820328/)
+
+## ⭐ Support
+
+If you enjoyed the project, please consider giving this repository a star!
 
 ---
 
 <p align="center">
-  🌌 <strong>NEBULA: LAST STAND</strong><br/>
+  <strong>🌌 NEBULA: LAST STAND</strong><br/>
   <em>One Spaceship. Endless Enemies. One Last Stand.</em>
 </p>
